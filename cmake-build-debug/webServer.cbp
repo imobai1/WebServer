@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="webServer" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="webServer">
+         <Option output="/home/webServe/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="webServer/fast">
+         <Option output="/home/webServe/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 webServer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/webServe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/webServe/CGImysql/sqlConnetionPool.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/CGImysql/sqlConnetionPool.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/condition/condition.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/condition/condition.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/locker/locker.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/locker/locker.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/signal/sem.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/Thread_synchronization_mechanism/signal/sem.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/http/httpConnection.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/http/httpConnection.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/log/block_queue.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/log/block_queue.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/log/log.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/log/log.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/main.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
