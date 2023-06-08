@@ -20,6 +20,7 @@
 #define WEBSERVER_LOG_H
 #include <stdio.h>
 #include <iostream>
+#include <string.h>
 #include <string>
 #include <stdarg.h>
 #include <pthread.h>
@@ -29,14 +30,14 @@ class m_log {
 public:
     //C++11以后,使用局部变量懒汉不用加锁
     static m_log *get_instance();
-
+    // 刷新日志的线程入口函数，调用了异步写入日志函数
     static void *flush_log_thread(void *args);
-
+    // 初始化函数，用于初始化日志实例及相关参数，创建异步写入日志线程
     bool init(const char *file_name, int close_log, int log_buf_size = 8192, int split_lines = 5000000, int max_queue_size = 0);
-
+    // 写入日志的函数，根据日志级别格式化日志内容并写入文件或放入日志队列
     void write_log(int level, const char *format, ...);
-
-    void flush(void);
+    // 强制刷新写入流缓冲区的函数
+    void flush();
 private:
     m_log();
     ~m_log();
@@ -59,26 +60,26 @@ private:
 
 #define LOG_DEBUG(format, ...) \
 if(0 == m_close_log) {         \
-    Log::get_instance()->write_log(0, format, ##__VA_ARGS__); \
-    Log::get_instance()->flush();  \
+     m_log::get_instance()->write_log(0, format, ##__VA_ARGS__); \
+     m_log::get_instance()->flush();  \
 }\
 
 #define LOG_INFO(format, ...) \
 if(0 == m_close_log) {        \
-    Log::get_instance()->write_log(1, format, ##__VA_ARGS__); \
-    Log::get_instance()->flush();                             \
+    m_log::get_instance()->write_log(1, format, ##__VA_ARGS__); \
+    m_log::get_instance()->flush();                             \
 }\
 
 #define LOG_WARN(format, ...) \
 if(0 == m_close_log) {        \
-    Log::get_instance()->write_log(2, format, ##__VA_ARGS__); \
-    Log::get_instance()->flush(); \
+     m_log::get_instance()->write_log(2, format, ##__VA_ARGS__); \
+     m_log::get_instance()->flush(); \
 }\
 
 #define LOG_ERROR(format, ...) \
 if(0 == m_close_log) {         \
-    Log::get_instance()->write_log(3, format, ##__VA_ARGS__); \
-    Log::get_instance()->flush();  \
+     m_log::get_instance()->write_log(3, format, ##__VA_ARGS__); \
+     m_log::get_instance()->flush();  \
 }\
 
 

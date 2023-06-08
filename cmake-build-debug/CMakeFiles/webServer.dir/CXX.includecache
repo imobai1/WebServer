@@ -61,6 +61,8 @@ httpConnection.h
 /home/webServe/http/httpConnection.h
 ../Thread_synchronization_mechanism/locker/locker.h
 /home/webServe/Thread_synchronization_mechanism/locker/locker.h
+../log/log.h
+/home/webServe/log/log.h
 mysql/mysql.h
 -
 fstream
@@ -110,10 +112,6 @@ map
 mysql/mysql.h
 -
 
-/home/webServe/log/block_queue.cpp
-block_queue.h
-/home/webServe/log/block_queue.h
-
 /home/webServe/log/block_queue.h
 iostream
 -
@@ -133,10 +131,30 @@ log.h
 /home/webServe/log/log.h
 
 /home/webServe/log/log.h
+stdio.h
+-
+iostream
+-
+string.h
+-
+string
+-
+stdarg.h
+-
+pthread.h
+-
+block_queue.h
+/home/webServe/log/block_queue.h
 
 /home/webServe/main.cpp
 iostream
 -
 string
 -
+stdio.h
+-
+string.h
+-
+log/block_queue.h
+/home/webServe/log/block_queue.h
 

@@ -258,33 +258,6 @@ http/httpConnection.cpp.s:
 	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/http/httpConnection.cpp.s
 .PHONY : http/httpConnection.cpp.s
 
-log/block_queue.o: log/block_queue.cpp.o
-
-.PHONY : log/block_queue.o
-
-# target to build an object file
-log/block_queue.cpp.o:
-	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/log/block_queue.cpp.o
-.PHONY : log/block_queue.cpp.o
-
-log/block_queue.i: log/block_queue.cpp.i
-
-.PHONY : log/block_queue.i
-
-# target to preprocess a source file
-log/block_queue.cpp.i:
-	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/log/block_queue.cpp.i
-.PHONY : log/block_queue.cpp.i
-
-log/block_queue.s: log/block_queue.cpp.s
-
-.PHONY : log/block_queue.s
-
-# target to generate assembly for a file
-log/block_queue.cpp.s:
-	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/log/block_queue.cpp.s
-.PHONY : log/block_queue.cpp.s
-
 log/log.o: log/log.cpp.o
 
 .PHONY : log/log.o
@@ -363,9 +336,6 @@ help:
 	@echo "... http/httpConnection.o"
 	@echo "... http/httpConnection.i"
 	@echo "... http/httpConnection.s"
-	@echo "... log/block_queue.o"
-	@echo "... log/block_queue.i"
-	@echo "... log/block_queue.s"
 	@echo "... log/log.o"
 	@echo "... log/log.i"
 	@echo "... log/log.s"

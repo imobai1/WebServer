@@ -18,6 +18,7 @@
 */
 #include "httpConnection.h"
 #include "../Thread_synchronization_mechanism/locker/locker.h"
+#include "../log/log.h"
 #include <mysql/mysql.h>
 #include <fstream>
 
@@ -248,7 +249,7 @@ http_connection::HTTP_CODE http_connection::process_read() {
     while ((m_check_state == CHECK_STATE_CONTENT && line_status == LINE_OK) || ((line_status = parse_line()) == LINE_OK)){
         text = get_line();
         m_start_line = m_checked_idx;
-        //LOG_INFO("%s", text);
+        LOG_INFO("%s", text);
         switch (m_check_state)
         {
             case CHECK_STATE_REQUESTLINE:{
@@ -401,7 +402,7 @@ http_connection::HTTP_CODE http_connection::parse_headers(char *text) {
         m_host = text;
     }
     else{
-        //LOG_INFO("oop!unknow header: %s", text);
+        LOG_INFO("oop!unknow header: %s", text);
     }
     return NO_REQUEST;
 }
@@ -587,7 +588,7 @@ bool http_connection::add_response(const char *format, ...) {
     m_write_idx += len;
     va_end(arg_list);
 
-    //LOG_INFO("request:%s", m_write_buf);
+    LOG_INFO("request:%s", m_write_buf);
 
     return true;
 }

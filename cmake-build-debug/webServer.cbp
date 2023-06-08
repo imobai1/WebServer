@@ -114,9 +114,6 @@
       <Unit filename="/home/webServe/http/httpConnection.h">
          <Option target="webServer"/>
       </Unit>
-      <Unit filename="/home/webServe/log/block_queue.cpp">
-         <Option target="webServer"/>
-      </Unit>
       <Unit filename="/home/webServe/log/block_queue.h">
          <Option target="webServer"/>
       </Unit>
