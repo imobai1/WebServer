@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/condition.cpp.o"
   "CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o"
   "CMakeFiles/webServer.dir/log/log.cpp.o"
+  "CMakeFiles/webServer.dir/timer/lst_timer.cpp.o"
   "webServer.pdb"
   "webServer"
 )

@@ -28,9 +28,9 @@
 
 class m_log {
 public:
-    //C++11以后,使用局部变量懒汉不用加锁
+    //使用局部变量懒汉不用加锁
     static m_log *get_instance();
-    // 刷新日志的线程入口函数，调用了异步写入日志函数
+    // 刷新日志的线程，调用了异步写入日志函数
     static void *flush_log_thread(void *args);
     // 初始化函数，用于初始化日志实例及相关参数，创建异步写入日志线程
     bool init(const char *file_name, int close_log, int log_buf_size = 8192, int split_lines = 5000000, int max_queue_size = 0);
@@ -50,12 +50,12 @@ private:
     int m_log_buf_size;                     //日志缓冲区大小
     long long m_count;                      //日志行数记录
     int m_today;                            //因为按天分类,记录当前时间是那一天
-    FILE *m_fp;                             //打开log的文件指针
-    char *m_buf;
     block_queue<std::string> *m_log_queue;  //阻塞队列
     bool m_is_async;                        //是否同步标志位
-    locker m_mutex;
     int m_close_log;                        //关闭日志
+    FILE *m_fp;                             //打开log的文件指针
+    char *m_buf = nullptr;
+    locker m_mutex;
 };
 
 #define LOG_DEBUG(format, ...) \

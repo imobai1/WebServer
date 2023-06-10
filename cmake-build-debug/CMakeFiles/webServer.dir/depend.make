@@ -3,6 +3,11 @@
 
 CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../CGImysql/sqlConnetionPool.cpp
 CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../CGImysql/sqlConnetionPool.h
+CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
+CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
+CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../log/block_queue.h
+CMakeFiles/webServer.dir/CGImysql/sqlConnetionPool.cpp.o: ../log/log.h
 
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/condition.cpp.o: ../Thread_synchronization_mechanism/condition/condition.cpp
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/condition.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
@@ -13,8 +18,10 @@ CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o: .
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.o: ../Thread_synchronization_mechanism/signal/sem.cpp
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
 
+CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../CGImysql/sqlConnetionPool.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../http/httpConnection.cpp
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../http/httpConnection.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../log/block_queue.h

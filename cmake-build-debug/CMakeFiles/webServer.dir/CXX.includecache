@@ -9,6 +9,8 @@
 /home/webServe/CGImysql/sqlConnetionPool.cpp
 sqlConnetionPool.h
 /home/webServe/CGImysql/sqlConnetionPool.h
+../log/log.h
+/home/webServe/log/log.h
 
 /home/webServe/CGImysql/sqlConnetionPool.h
 stdio.h
@@ -25,6 +27,10 @@ iostream
 -
 string
 -
+../Thread_synchronization_mechanism/locker/locker.h
+/home/webServe/Thread_synchronization_mechanism/locker/locker.h
+../Thread_synchronization_mechanism/signal/sem.h
+/home/webServe/Thread_synchronization_mechanism/signal/sem.h
 
 /home/webServe/Thread_synchronization_mechanism/condition/condition.cpp
 condition.h
@@ -63,8 +69,6 @@ httpConnection.h
 /home/webServe/Thread_synchronization_mechanism/locker/locker.h
 ../log/log.h
 /home/webServe/log/log.h
-mysql/mysql.h
--
 fstream
 -
 
@@ -111,6 +115,8 @@ map
 -
 mysql/mysql.h
 -
+../CGImysql/sqlConnetionPool.h
+/home/webServe/CGImysql/sqlConnetionPool.h
 
 /home/webServe/log/block_queue.h
 iostream

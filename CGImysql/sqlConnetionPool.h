@@ -25,8 +25,8 @@
 #include <string.h>
 #include <iostream>
 #include <string>
-
-using namespace std;
+#include "../Thread_synchronization_mechanism/locker/locker.h"
+#include "../Thread_synchronization_mechanism/signal/sem.h"
 
 class SqlConnectPool{
 public:
@@ -34,13 +34,41 @@ public:
     MYSQL *GetConnection();
     //释放连接
     bool ReleaseConnection(MYSQL *connection);
-
-    SqlConnectPool();
-
     //获得链接
     int GetFreeConnection();
     //销毁所有链接
     void DestroyPool();
+    //获得单例
+    static SqlConnectPool *GetInstance();
+    //初始化
+    void init(std::string url,std::string User,std::string Password,std::string DatabaseName,int Port,int MacConn,int close_log);
+
+    std::string m_url;              //主机地址
+    std::string m_Port;             //数据库端口号
+    std::string m_User;             //登录数据库用户名
+    std::string m_Password;         //登录数据库密码
+    std::string m_DatabaseName;     //使用数据库名
+    int m_close_log;                //日志开关
+private:
+    SqlConnectPool();
+    ~SqlConnectPool();
+
+    int m_MacConn_count;    //最大连接数
+    int m_CurConn_count;    //当前已使用的连接数
+    int m_FreeConn_count;   //当前空闲的连接数
+    locker lock;
+    sem reserve;
+    list<MYSQL *>connList;  //连接池
+};
+
+//辅助类，用于在作用域结束时自动释放数据库连接
+class connectionRAII{
+public:
+    connectionRAII(MYSQL **conn,SqlConnectPool *connectPool);
+    ~connectionRAII();
+private:
+    MYSQL *conRAII;
+    SqlConnectPool *poolRAII;
 };
 
 

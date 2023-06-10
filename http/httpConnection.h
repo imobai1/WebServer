@@ -39,6 +39,7 @@
 #include <sys/uio.h>
 #include <map>
 #include <mysql/mysql.h>
+#include "../CGImysql/sqlConnetionPool.h"
 
 
 class http_connection{
@@ -89,7 +90,7 @@ public:
     // 获取连接的地址信息
     sockaddr_in *get_address();
     // 初始化 MySQL 连接结果对象
-    //void initmysql_result(connection_pool *connPool);
+    void initMysql_result(SqlConnectPool *connPool);
 
 private:
     // 初始化新接受的连接
@@ -107,7 +108,7 @@ private:
     // 处理请求，根据请求内容执行相应的操作
     HTTP_CODE do_request();
     // 获取当前正在解析的行的起始位置
-    char *get_line() { return m_read_buf + m_start_line; };
+    char *get_line();
     // 解析一行数据
     LINE_STATUS parse_line();
     // 取消文件内存映射

@@ -90,6 +90,9 @@
       <Unit filename="/home/webServe/CGImysql/sqlConnetionPool.h">
          <Option target="webServer"/>
       </Unit>
+      <Unit filename="/home/webServe/Thread/threadPool.h">
+         <Option target="webServer"/>
+      </Unit>
       <Unit filename="/home/webServe/Thread_synchronization_mechanism/condition/condition.cpp">
          <Option target="webServer"/>
       </Unit>
@@ -124,6 +127,12 @@
          <Option target="webServer"/>
       </Unit>
       <Unit filename="/home/webServe/main.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/timer/lst_timer.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/timer/lst_timer.h">
          <Option target="webServer"/>
       </Unit>
       <Unit filename="/home/webServe/CMakeLists.txt">
