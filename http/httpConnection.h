@@ -53,7 +53,8 @@ public:
     enum CHECK_STATE{
         CHECK_STATE_REQUESTLINE = 0,    //表示当前正在解析请求行
         CHECK_STATE_HEADER,             //表示当前正在解析请求头部
-        CHECK_STATE_CONTENT};           //表示当前正在解析请求内容
+        CHECK_STATE_CONTENT             //表示当前正在解析请求内容
+    };
     //HTTP 请求的不同状态或结果
     enum HTTP_CODE{
         NO_REQUEST,         //表示没有请求
@@ -63,11 +64,13 @@ public:
         FORBIDDEN_REQUEST,  //表示请求的资源被禁止访问
         FILE_REQUEST,       //表示收到了一个针对文件的请求
         INTERNAL_ERROR,      //表示在处理请求时发生了内部错误
-        CLOSED_CONNECTION}; //表示连接已关闭，无法继续处理请求
+        CLOSED_CONNECTION   //表示连接已关闭，无法继续处理请求
+    };
     enum LINE_STATUS{
         LINE_OK = 0,    //表示读取行成功，行的内容是有效的
         LINE_BAD,       //表示读取行失败，行的内容有错误或不合法
-        LINE_OPEN};     //表示行尚未读取完整，需要继续读取更多数据
+        LINE_OPEN       //表示行尚未读取完整，需要继续读取更多数据
+    };
 
     int timer_flag;  // 定时器标志
     int improv;     // 是否改善
@@ -163,9 +166,9 @@ private:
     int bytes_have_send;                // 已经发送的字节数
     char* doc_root;                     // Web 服务器的根目录
 
-    std::map<std::string,std::string> m_users;        // 用户名和密码的映射表
-    int m_TRIGMode;                     // 运行模式
-    int m_close_log;                    // 是否关闭日志记录
+    std::map<std::string,std::string> m_users;           // 用户名和密码的映射表
+    int m_TRIGMode;                                      // 运行模式
+    int m_close_log;                                     // 是否关闭日志记录
 
     char sql_user[100];                 // 数据库用户名
     char sql_passwd[100];               // 数据库密码

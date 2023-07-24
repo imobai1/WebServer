@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/webServe/Thread_synchronization_mechanism/condition/condition.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/condition.cpp.o"
   "/home/webServe/Thread_synchronization_mechanism/locker/locker.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o"
   "/home/webServe/Thread_synchronization_mechanism/signal/sem.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.o"
+  "/home/webServe/config/config.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/config/config.cpp.o"
   "/home/webServe/http/httpConnection.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/http/httpConnection.cpp.o"
   "/home/webServe/log/log.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/log/log.cpp.o"
   "/home/webServe/main.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/main.cpp.o"
   "/home/webServe/timer/lst_timer.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/timer/lst_timer.cpp.o"
+  "/home/webServe/webserver/webserver.cpp" "/home/webServe/cmake-build-debug/CMakeFiles/webServer.dir/webserver/webserver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

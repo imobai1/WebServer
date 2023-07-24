@@ -231,6 +231,33 @@ Thread_synchronization_mechanism/signal/sem.cpp.s:
 	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.s
 .PHONY : Thread_synchronization_mechanism/signal/sem.cpp.s
 
+config/config.o: config/config.cpp.o
+
+.PHONY : config/config.o
+
+# target to build an object file
+config/config.cpp.o:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/config/config.cpp.o
+.PHONY : config/config.cpp.o
+
+config/config.i: config/config.cpp.i
+
+.PHONY : config/config.i
+
+# target to preprocess a source file
+config/config.cpp.i:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/config/config.cpp.i
+.PHONY : config/config.cpp.i
+
+config/config.s: config/config.cpp.s
+
+.PHONY : config/config.s
+
+# target to generate assembly for a file
+config/config.cpp.s:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/config/config.cpp.s
+.PHONY : config/config.cpp.s
+
 http/httpConnection.o: http/httpConnection.cpp.o
 
 .PHONY : http/httpConnection.o
@@ -339,6 +366,33 @@ timer/lst_timer.cpp.s:
 	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/timer/lst_timer.cpp.s
 .PHONY : timer/lst_timer.cpp.s
 
+webserver/webserver.o: webserver/webserver.cpp.o
+
+.PHONY : webserver/webserver.o
+
+# target to build an object file
+webserver/webserver.cpp.o:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/webserver/webserver.cpp.o
+.PHONY : webserver/webserver.cpp.o
+
+webserver/webserver.i: webserver/webserver.cpp.i
+
+.PHONY : webserver/webserver.i
+
+# target to preprocess a source file
+webserver/webserver.cpp.i:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/webserver/webserver.cpp.i
+.PHONY : webserver/webserver.cpp.i
+
+webserver/webserver.s: webserver/webserver.cpp.s
+
+.PHONY : webserver/webserver.s
+
+# target to generate assembly for a file
+webserver/webserver.cpp.s:
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/webserver/webserver.cpp.s
+.PHONY : webserver/webserver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,6 +414,9 @@ help:
 	@echo "... Thread_synchronization_mechanism/signal/sem.o"
 	@echo "... Thread_synchronization_mechanism/signal/sem.i"
 	@echo "... Thread_synchronization_mechanism/signal/sem.s"
+	@echo "... config/config.o"
+	@echo "... config/config.i"
+	@echo "... config/config.s"
 	@echo "... http/httpConnection.o"
 	@echo "... http/httpConnection.i"
 	@echo "... http/httpConnection.s"
@@ -372,6 +429,9 @@ help:
 	@echo "... timer/lst_timer.o"
 	@echo "... timer/lst_timer.i"
 	@echo "... timer/lst_timer.s"
+	@echo "... webserver/webserver.o"
+	@echo "... webserver/webserver.i"
+	@echo "... webserver/webserver.s"
 .PHONY : help
 
 

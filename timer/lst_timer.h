@@ -40,7 +40,7 @@
 
 #include <time.h>
 #include "../log/log.h"
-
+//定时器处理非活动连接
 class util_timer;
 
 struct client_data{
@@ -55,7 +55,6 @@ public:
 
 public:
     time_t expire;
-
     void (* cb_func)(client_data *);
     client_data *user_data;
     util_timer *prev;

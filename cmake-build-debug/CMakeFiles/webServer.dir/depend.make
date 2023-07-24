@@ -18,6 +18,19 @@ CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o: .
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.o: ../Thread_synchronization_mechanism/signal/sem.cpp
 CMakeFiles/webServer.dir/Thread_synchronization_mechanism/signal/sem.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
 
+CMakeFiles/webServer.dir/config/config.cpp.o: ../CGImysql/sqlConnetionPool.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../Thread/threadPool.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../config/config.cpp
+CMakeFiles/webServer.dir/config/config.cpp.o: ../config/config.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../http/httpConnection.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../log/block_queue.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../log/log.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../timer/lst_timer.h
+CMakeFiles/webServer.dir/config/config.cpp.o: ../webserver/webserver.h
+
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../CGImysql/sqlConnetionPool.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
 CMakeFiles/webServer.dir/http/httpConnection.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
@@ -33,8 +46,38 @@ CMakeFiles/webServer.dir/log/log.cpp.o: ../log/block_queue.h
 CMakeFiles/webServer.dir/log/log.cpp.o: ../log/log.cpp
 CMakeFiles/webServer.dir/log/log.cpp.o: ../log/log.h
 
+CMakeFiles/webServer.dir/main.cpp.o: ../CGImysql/sqlConnetionPool.h
+CMakeFiles/webServer.dir/main.cpp.o: ../Thread/threadPool.h
 CMakeFiles/webServer.dir/main.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
 CMakeFiles/webServer.dir/main.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/main.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
+CMakeFiles/webServer.dir/main.cpp.o: ../config/config.h
+CMakeFiles/webServer.dir/main.cpp.o: ../http/httpConnection.h
 CMakeFiles/webServer.dir/main.cpp.o: ../log/block_queue.h
+CMakeFiles/webServer.dir/main.cpp.o: ../log/log.h
 CMakeFiles/webServer.dir/main.cpp.o: ../main.cpp
+CMakeFiles/webServer.dir/main.cpp.o: ../timer/lst_timer.h
+CMakeFiles/webServer.dir/main.cpp.o: ../webserver/webserver.h
+
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../CGImysql/sqlConnetionPool.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../http/httpConnection.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../log/block_queue.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../log/log.h
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../timer/lst_timer.cpp
+CMakeFiles/webServer.dir/timer/lst_timer.cpp.o: ../timer/lst_timer.h
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../CGImysql/sqlConnetionPool.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../Thread/threadPool.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../Thread_synchronization_mechanism/condition/condition.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../Thread_synchronization_mechanism/locker/locker.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../Thread_synchronization_mechanism/signal/sem.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../http/httpConnection.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../log/block_queue.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../log/log.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../timer/lst_timer.h
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../webserver/webserver.cpp
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../webserver/webserver.h
 

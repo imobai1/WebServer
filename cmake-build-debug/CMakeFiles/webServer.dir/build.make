@@ -249,6 +249,54 @@ CMakeFiles/webServer.dir/timer/lst_timer.cpp.o.provides: CMakeFiles/webServer.di
 CMakeFiles/webServer.dir/timer/lst_timer.cpp.o.provides.build: CMakeFiles/webServer.dir/timer/lst_timer.cpp.o
 
 
+CMakeFiles/webServer.dir/config/config.cpp.o: CMakeFiles/webServer.dir/flags.make
+CMakeFiles/webServer.dir/config/config.cpp.o: ../config/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/webServe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/webServer.dir/config/config.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/webServer.dir/config/config.cpp.o -c /home/webServe/config/config.cpp
+
+CMakeFiles/webServer.dir/config/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/webServer.dir/config/config.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/webServe/config/config.cpp > CMakeFiles/webServer.dir/config/config.cpp.i
+
+CMakeFiles/webServer.dir/config/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/webServer.dir/config/config.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/webServe/config/config.cpp -o CMakeFiles/webServer.dir/config/config.cpp.s
+
+CMakeFiles/webServer.dir/config/config.cpp.o.requires:
+
+.PHONY : CMakeFiles/webServer.dir/config/config.cpp.o.requires
+
+CMakeFiles/webServer.dir/config/config.cpp.o.provides: CMakeFiles/webServer.dir/config/config.cpp.o.requires
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/config/config.cpp.o.provides.build
+.PHONY : CMakeFiles/webServer.dir/config/config.cpp.o.provides
+
+CMakeFiles/webServer.dir/config/config.cpp.o.provides.build: CMakeFiles/webServer.dir/config/config.cpp.o
+
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: CMakeFiles/webServer.dir/flags.make
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o: ../webserver/webserver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/webServe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/webServer.dir/webserver/webserver.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/webServer.dir/webserver/webserver.cpp.o -c /home/webServe/webserver/webserver.cpp
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/webServer.dir/webserver/webserver.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/webServe/webserver/webserver.cpp > CMakeFiles/webServer.dir/webserver/webserver.cpp.i
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/webServer.dir/webserver/webserver.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/webServe/webserver/webserver.cpp -o CMakeFiles/webServer.dir/webserver/webserver.cpp.s
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o.requires:
+
+.PHONY : CMakeFiles/webServer.dir/webserver/webserver.cpp.o.requires
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o.provides: CMakeFiles/webServer.dir/webserver/webserver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/webServer.dir/build.make CMakeFiles/webServer.dir/webserver/webserver.cpp.o.provides.build
+.PHONY : CMakeFiles/webServer.dir/webserver/webserver.cpp.o.provides
+
+CMakeFiles/webServer.dir/webserver/webserver.cpp.o.provides.build: CMakeFiles/webServer.dir/webserver/webserver.cpp.o
+
+
 # Object files for target webServer
 webServer_OBJECTS = \
 "CMakeFiles/webServer.dir/main.cpp.o" \
@@ -258,7 +306,9 @@ webServer_OBJECTS = \
 "CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/condition.cpp.o" \
 "CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o" \
 "CMakeFiles/webServer.dir/log/log.cpp.o" \
-"CMakeFiles/webServer.dir/timer/lst_timer.cpp.o"
+"CMakeFiles/webServer.dir/timer/lst_timer.cpp.o" \
+"CMakeFiles/webServer.dir/config/config.cpp.o" \
+"CMakeFiles/webServer.dir/webserver/webserver.cpp.o"
 
 # External object files for target webServer
 webServer_EXTERNAL_OBJECTS =
@@ -271,9 +321,11 @@ webServer: CMakeFiles/webServer.dir/Thread_synchronization_mechanism/condition/c
 webServer: CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o
 webServer: CMakeFiles/webServer.dir/log/log.cpp.o
 webServer: CMakeFiles/webServer.dir/timer/lst_timer.cpp.o
+webServer: CMakeFiles/webServer.dir/config/config.cpp.o
+webServer: CMakeFiles/webServer.dir/webserver/webserver.cpp.o
 webServer: CMakeFiles/webServer.dir/build.make
 webServer: CMakeFiles/webServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/webServe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable webServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/webServe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable webServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/webServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -289,6 +341,8 @@ CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/Thread_synchronizati
 CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/Thread_synchronization_mechanism/locker/locker.cpp.o.requires
 CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/log/log.cpp.o.requires
 CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/timer/lst_timer.cpp.o.requires
+CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/config/config.cpp.o.requires
+CMakeFiles/webServer.dir/requires: CMakeFiles/webServer.dir/webserver/webserver.cpp.o.requires
 
 .PHONY : CMakeFiles/webServer.dir/requires
 

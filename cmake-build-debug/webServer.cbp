@@ -39,7 +39,7 @@
       </Target>
       <Target title="webServer">
          <Option output="/home/webServe/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option working_dir="/home/webServe" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
@@ -62,7 +62,7 @@
       </Target>
       <Target title="webServer/fast">
          <Option output="/home/webServe/cmake-build-debug/webServer" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/webServe/cmake-build-debug" />
+         <Option working_dir="/home/webServe" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
@@ -111,6 +111,12 @@
       <Unit filename="/home/webServe/Thread_synchronization_mechanism/signal/sem.h">
          <Option target="webServer"/>
       </Unit>
+      <Unit filename="/home/webServe/config/config.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/config/config.h">
+         <Option target="webServer"/>
+      </Unit>
       <Unit filename="/home/webServe/http/httpConnection.cpp">
          <Option target="webServer"/>
       </Unit>
@@ -133,6 +139,12 @@
          <Option target="webServer"/>
       </Unit>
       <Unit filename="/home/webServe/timer/lst_timer.h">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/webserver/webserver.cpp">
+         <Option target="webServer"/>
+      </Unit>
+      <Unit filename="/home/webServe/webserver/webserver.h">
          <Option target="webServer"/>
       </Unit>
       <Unit filename="/home/webServe/CMakeLists.txt">

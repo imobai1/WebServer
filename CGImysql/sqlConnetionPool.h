@@ -28,6 +28,7 @@
 #include "../Thread_synchronization_mechanism/locker/locker.h"
 #include "../Thread_synchronization_mechanism/signal/sem.h"
 
+//校验 & 数据库连接池
 class SqlConnectPool{
 public:
     //获得数据库连接
@@ -58,7 +59,7 @@ private:
     int m_FreeConn_count;   //当前空闲的连接数
     locker lock;
     sem reserve;
-    list<MYSQL *>connList;  //连接池
+    std::list<MYSQL *>connList;  //连接池
 };
 
 //辅助类，用于在作用域结束时自动释放数据库连接

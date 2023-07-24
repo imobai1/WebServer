@@ -17,7 +17,6 @@
  limitations under the License.
 */
 #include "httpConnection.h"
-#include "../Thread_synchronization_mechanism/locker/locker.h"
 #include "../log/log.h"
 #include <fstream>
 
@@ -611,7 +610,7 @@ bool http_connection::add_response(const char *format, ...) {
 }
 
 bool http_connection::add_content(const char *content) {
-    return false;
+    return add_response("%s", content);
 }
 
 bool http_connection::add_status_line(int status, const char *title) {
@@ -631,7 +630,7 @@ bool http_connection::add_content_length(int content_length) {
 }
 
 bool http_connection::add_linger() {
-    return add_response("Connection:%s\r\n", (m_linger == true) ? "keep-alive" : "close");
+    return add_response("Connection:%s\r\n", m_linger ? "keep-alive" : "close");
 
 }
 

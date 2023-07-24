@@ -180,8 +180,10 @@ void Utils::show_error(int connfd, const char *info) {
     send(connfd, info, strlen(info), 0);
     close(connfd);
 }
+int *Utils::u_pipefd = 0;
+int Utils::u_epollfd = 0;
 
-class Utils;
+
 void cb_func(client_data *user_data)
 {
     epoll_ctl(Utils::u_epollfd, EPOLL_CTL_DEL, user_data->sockfd, 0);
